@@ -22,7 +22,7 @@ engine = create_engine("sqlite:///db/bellybutton.sqlite", echo=False)
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 Samples = Base.classes.samples
-#OTU = Base.classes.otu
+
 Samples_Metadata = Base.classes.sample_metadata
 
 
